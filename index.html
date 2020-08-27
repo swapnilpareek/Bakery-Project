@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" /> 
+    <title>Home Bakery</title>
+    <link rel="stylesheet" href="app.css" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f49423d076.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="container">
+        <nav id="mainNavbar" class="navbar navbar-dark navbar-expand-md py-0 fixed-top">
+            <a href="#" class="navbar-brand">BAKERY</a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navLinks">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link"><i class="fas fa-home"></i> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#menu" class="nav-link"><i class="fas fa-utensils"></i> Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link"><i class="fas fa-phone-alt"></i> Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#location" class="nav-link"><i class="fas fa-map-marker-alt"></i> Come to Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <section id="home" class="headingGroup blurb">
+            <h1>Welcome To Home Bakery</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus maxime atque cumque odio libero quas.</p>
+        </section>
+        <section id="menu">
+            <h1>Menu</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt unde nesciunt, vel porro expedita esse non accusamus facere corporis distinctio debitis minus, voluptates tempora dolorem. Unde, repellat! Vitae omnis aliquid earum inventore esse aperiam fugiat ex error, nam architecto magni hic ipsa eius quae voluptatibus suscipit ea placeat pariatur fuga? Minus perferendis ratione dicta doloremque accusamus consequatur dolores quam nam rem? Dolor doloremque quam iusto ea quibusdam natus, blanditiis temporibus?</p>
+        </section>
+        <section id="contact">
+            <h1>Contact Us</h1>
+            <p class="phone">
+                <i class="fas fa-mobile-alt"></i> 9840156813 : Swapnil Pareek
+            </p>
+            <p>
+                <a href=""><i class="fab fa-instagram"></i> pareek_sahaab</a>
+            </p>
+            <p>
+                <a href=""><i class="fab fa-facebook-square"></i> Jay Pareek</a>
+            </p>
+            <p>
+                <a href=""><i class="fab fa-twitter"></i> SwapnilParee9</a>
+            </p>
+            <p>
+                <a href=""><i class="fab fa-snapchat-ghost"></i> pareek_sahaab</a>
+            </p>
+
+        </section>
+        <section id="location">
+            <h1>Come to Us</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus maxime atque cumque odio libero quas.</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.6478162266653!2d80.24308841477082!3d12.994363090840933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a526788f2f630e9%3A0x2c720afd60e00e18!2sInstitute%20of%20Hotel%20Management%20Catering%20Technology%20%26%20Applied%20Nutrition!5e0!3m2!1sen!2sin!4v1598531247971!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </section>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <script>
+        $(function () {
+            $(document).scroll(function () {
+                var $nav = $("#mainNavbar");
+                $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+            });
+        });
+    </script>  
+</body>
+</html>
